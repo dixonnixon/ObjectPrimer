@@ -1,8 +1,9 @@
 <?php
 namespace domain;
-use domain\PersonGroup;
+use domain\PersonRole;
+use publ\CoderRole;
 
-class Coder extends PersonGroup implements CoderRole
+class Coder extends PersonRole implements CoderRole
 {
     public function __construct($group)
     {

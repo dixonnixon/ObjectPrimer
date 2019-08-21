@@ -9,14 +9,15 @@ class Person
         $this->_roles = new \Ds\Vector();
     }
 
-    function addRole(PersonGroup $value)
+    function addRole(PersonRole $value)
     {
         $this->_roles->push($value);
     }
 
     function roleOf(String $roleName, Group $group)
     {   
-        return $this->_roles->filter(function($role) use ($roleName, $group) {
+        return $this->_roles->filter(function($role) use ($roleName, $group) 
+        {
             $nspClassName = __NAMESPACE__ . "\\" . $roleName;
             if($role instanceof $nspClassName && $role->group() == $group) 
             {

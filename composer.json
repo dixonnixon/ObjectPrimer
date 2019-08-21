@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
             "tanks\\": "src/",
-            "domain\\" : "src/classes/domain"
+            "domain\\" : "src/classes/domain",
+            "publ\\" : "src/interfaces",
+            "templ\\": "src/templates",
+            "infra\\": "src/classes/infrastruct"
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace domain;
+namespace publ;
 interface CoderRole
 {
     function code();

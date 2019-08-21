@@ -1,5 +1,5 @@
 <?php
-namespace domain;
+namespace publ;
 interface ConstructorRole
 {
     function draw();
